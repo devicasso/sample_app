@@ -22,10 +22,11 @@ end
 
 gem 'jquery-rails', '2.0.0'
 
-group :test do
-  gem 'capybara', '1.1.2'
-  # System-dependent gems
-end
+# group :test do
+#   gem 'capybara', '1.1.2'
+#   gem 'factory_girl_rails'
+#   # System-dependent gems
+# end
 
 group :production do
   gem 'pg', '0.12.2'
@@ -49,6 +50,7 @@ end
 # Test gems on Macintosh OS X
 group :test do
   gem 'capybara', '1.1.2'
+  gem 'factory_girl_rails'
   gem 'rb-fsevent', '~> 0.9.1', :require => false
   gem 'growl', '1.0.3'
   gem 'guard-spork', '0.3.2'
